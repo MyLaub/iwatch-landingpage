@@ -30,13 +30,17 @@ main {
   margin: 20px 20px 20px 20px;
 }
 
+h1{
+  font-size: 3rem;
+  font-weight: 200;
+  color: #fff;
+}
+
 .grid-container {
-  /* margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px; */
+ 
   display: grid;
-  grid-template-columns: 2fr 1fr max-content;
-  /* grid-template-rows: repeat(2, 50vh); */
+  grid-template-columns: 2fr 1fr auto;
+
   grid-template-rows: repeat(4, auto);
   max-height: 100vh;
 }
