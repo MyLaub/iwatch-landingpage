@@ -28,35 +28,38 @@ html {
 body,
 main {
   margin: 20px 20px 20px 20px;
+  
 }
 
-h1{
-  font-size: 3rem;
-  font-weight: 200;
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
   color: #fff;
 }
 
 .grid-container {
- 
   display: grid;
-  grid-template-columns: 2fr 1fr auto;
+  grid-template-columns: 2fr 1fr max-content;
 
   grid-template-rows: repeat(4, auto);
   max-height: 100vh;
+  
 }
 
-li a{
+li a {
   text-decoration: none;
   color: #fff;
 }
 
-.icon {
+.icon,
+.button-arrow {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
   display: flex;
   align-items: center;
+  color: #fff;
 }
 
 .icon:hover {
@@ -79,4 +82,25 @@ input,
 select,
 textarea {
   font: inherit;
+  font-weight: 500;
+}
+
+.card {
+  aspect-ratio: 16/9;
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  overflow: visible;
+  place-items: end;
+  display: grid;
+}
+
+.img-watch-card {
+  position: absolute;
+  width: 80%;
+  place-self: center;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transform: translateY(-20%);
 }

@@ -5,12 +5,7 @@ import Bag from "../images/shopping-bag.png";
 
 const HeaderComponent = () => {
   return (
-    <header className="header" style={{ gridColumn: "1 / -1",            
-    display: "grid",
-    gridTemplateColumns: "auto 1fr auto",
-    alignItems: "center",
-    gap: "1rem",
-    padding: "10px 20px"}}>
+    <header className="header" style={{ display:"flex", justifyContent: "space-between", alignItems: "center", padding: "1.5rem 0rem", gridColumn: "1 / -1", }}>
       <a href="/" className="logo" styling={{gridColumn: "1", justifySelf: "start",}}>
         <Image src={Logo} alt="Logo" width={48} height={48} />
       </a>
