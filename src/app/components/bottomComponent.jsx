@@ -15,13 +15,13 @@ const BottomComponent = () => {
 
          <ul className="watches" style={{gridColumn:"2", display:"flex", fontSize:"inherit", gap:"1rem", listStyle:"none", padding:0, margin:0}}>
           <li className="card" style={{ background: "rgba(67, 69, 88, 0.6)"}}>
-            <Image src={Navy} alt="Watch" className="img-watch-card" />
+            <Image src={Navy}  alt="Watch" className="img-watch-card" />
           </li>
           <li className="card" style={{ background: "rgba(106, 221, 204, 0.6)"}}>
-            <Image src={Mint} alt="Watch" className="img-watch-card"/>
+            <Image src={Mint}  alt="Watch" className="img-watch-card"/>
           </li>
             <li className="card"  style={{ background: "rgba(249, 205, 196, 0.6)"}}>
-            <Image src={Pink} alt="Watch" className="img-watch-card"/>
+            <Image src={Pink}alt="Watch" className="img-watch-card"/>
           </li>
         </ul>
         </section>
