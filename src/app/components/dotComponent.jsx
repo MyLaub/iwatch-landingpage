@@ -2,9 +2,17 @@
 import {useState} from "react";
 import { GoDotFill } from "react-icons/go";
 
-const dotComponent = () => {
+const dotComponent = (color, activeImage, setActiveImage, relatedImage) => {
     
-  return <GoDotFill size={40} />;
+return (
+  <div
+    onClick={() => setActiveImage(relatedImage)}
+    style={{backgroundColor: `var(--${color})`}}
+    className={`cursor-pointer w-10 h-10 rounded-full
+                ${activeImage === relatedImage ? "border-[3px] border-white" : ""}`}
+  />
+);
+
 };
 
 export default dotComponent;

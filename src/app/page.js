@@ -3,11 +3,17 @@ import { useState } from "react";
 
 import Image from "next/image";
 import Header from "./components/headerComponent";
-import Hero from "./components/heroComponent";
 import Button from "./components/buttonComponent";
-import Bottom from "./components/bottomComponent";
+
+
+import Navy from "./images/navy.png";
+import Mint from "./images/mint.png";
+import Pink from "./images/pink.png";
+
+import Dot from "./components/dotComponent";
 
 export default function Home() {
+  const [activeImage, setActiveImage] = useState(Navy);
   return (
     <main className="grid-container">
       <Header />
@@ -18,14 +24,14 @@ export default function Home() {
           Between Past And Future.
         </h1>
 
-        <Image src={NavyWatch} alt="Watch" style={{ gridColumn: "2/3" }} />
+        <Image src={activeImage} alt="Watch" style={{ gridColumn: "2/3" }} />
 
         <div style={{ gridColumn: "3", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "start", gap: "1rem" }}>
-          <Dot color="#434558" relatedImage={NavyWatch} />
+          <Dot color="#434558" activeImage={activeImage} setActiveImage={setActiveImage} relatedImage={Navy} />
 
-          <Dot color="#434558" relatedImage={NavyWatch} />
+          <Dot color="#434558" activeImage={activeImage} setActiveImage={setActiveImage} relatedImage={Mint} />
 
-          <Dot color="#434558" relatedImage={NavyWatch} />
+          <Dot color="#434558" activeImage={activeImage} setActiveImage={setActiveImage} relatedImage={Pink}/>
         </div>
       </section>
 
@@ -42,13 +48,13 @@ export default function Home() {
 
         <ul className="watches" style={{ gridColumn: "2", display: "flex", fontSize: "inherit", gap: "1rem", listStyle: "none", padding: 0, margin: 0 }}>
           <li className="card" style={{ background: "rgba(67, 69, 88, 0.6)" }}>
-            <Image src={Navy} alt="Watch" className="img-watch-card" />
+            <Image onClick={() => setActiveImage(Navy)} src={Navy} alt="Watch" className="img-watch-card" />
           </li>
           <li className="card" style={{ background: "rgba(106, 221, 204, 0.6)" }}>
-            <Image src={Mint} alt="Watch" className="img-watch-card" />
+            <Image onClick={() => setActiveImage(Mint)} src={Mint} alt="Watch" className="img-watch-card" />
           </li>
           <li className="card" style={{ background: "rgba(249, 205, 196, 0.6)" }}>
-            <Image src={Pink} alt="Watch" className="img-watch-card" />
+            <Image onClick={() => setActiveImage(Pink)} src={Pink} alt="Watch" className="img-watch-card" />
           </li>
         </ul>
       </section>
