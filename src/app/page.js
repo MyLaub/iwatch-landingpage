@@ -29,9 +29,9 @@ export default function Home() {
         <div style={{ gridColumn: "3", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "start", gap: "1rem" }}>
           <Dot color="#434558" activeImage={activeImage} setActiveImage={setActiveImage} relatedImage={Navy} />
 
-          <Dot color="#434558" activeImage={activeImage} setActiveImage={setActiveImage} relatedImage={Mint} />
+          <Dot color="#0b1cb5ff" activeImage={activeImage} setActiveImage={setActiveImage} relatedImage={Mint} />
 
-          <Dot color="#434558" activeImage={activeImage} setActiveImage={setActiveImage} relatedImage={Pink}/>
+          <Dot color="#881f5dff" activeImage={activeImage} setActiveImage={setActiveImage} relatedImage={Pink}/>
         </div>
       </section>
 
