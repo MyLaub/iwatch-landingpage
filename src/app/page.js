@@ -29,7 +29,7 @@ export default function Home() {
 
         <div className="col-start-3 col-end-4 flex flex-col place-items-start justify-center gap-4">
           <Dot
-            color="#blue"
+            color="blue"
             activeImage={activeImage}
             setActiveImage={setActiveImage}
             relatedImage={"/navy.png"}
