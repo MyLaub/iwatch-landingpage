@@ -28,7 +28,6 @@ html {
 body,
 main {
   margin: 20px 20px 20px 20px;
-  
 }
 
 h1 {
@@ -43,7 +42,6 @@ h1 {
 
   grid-template-rows: repeat(4, auto);
   max-height: 100vh;
-  
 }
 
 li a {
@@ -74,7 +72,18 @@ li a {
 }
 
 html {
-  font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  font-family:
+    "Poppins",
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
 }
 
 button,
@@ -105,15 +114,14 @@ textarea {
   transform: translateY(-20%);
 }
 
-.border-3{
+.border-3 {
   border-width: 3px;
   color: #fff;
+  border-style: solid;
 }
 
-.dots{
+/* .dots {
   cursor: pointer;
   width: 50px;
   height: 10px;
-
-  
-}
+} */
