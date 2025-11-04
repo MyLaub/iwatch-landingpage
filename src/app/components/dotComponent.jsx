@@ -2,7 +2,7 @@
 import {useState} from "react";
 
 
-const dotComponent = (color, activeImage, setActiveImage, relatedImage) => {
+const dotComponent = ({color, activeImage, setActiveImage, relatedImage}) => {
     
 return (
 
