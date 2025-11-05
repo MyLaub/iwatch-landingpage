@@ -25,11 +25,6 @@ html {
   background: linear-gradient(180deg, #b6ccda 100%, #c8dce5 0%) no-repeat fixed;
 }
 
-body,
-main {
-  margin: 20px 20px 20px 20px;
-}
-
 h1 {
   font-size: 4rem;
   font-weight: 300;
@@ -39,36 +34,7 @@ h1 {
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr max-content;
-
   grid-template-rows: repeat(4, auto);
-  max-height: 100vh;
-}
-
-li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.icon,
-.button-arrow {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-.icon:hover {
-  opacity: 0.7;
-}
-
-.divider {
-  width: 2px;
-  height: 25px;
-  background: #fff;
-  border-radius: 10px;
 }
 
 html {
@@ -86,42 +52,10 @@ html {
     "Segoe UI Emoji";
 }
 
-button,
-input,
-select,
-textarea {
-  font: inherit;
-  font-weight: 500;
-}
 
-.card {
-  aspect-ratio: 16/9;
-  position: relative;
-  width: 100%;
-  border-radius: 15px;
-  overflow: visible;
-  place-items: end;
-  display: grid;
-}
-
-.img-watch-card {
-  position: absolute;
-  width: 80%;
-  place-self: center;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  transform: translateY(-20%);
-}
 
 .border-3 {
   border-width: 3px;
   color: #fff;
   border-style: solid;
 }
-
-/* .dots {
-  cursor: pointer;
-  width: 50px;
-  height: 10px;
-} */
