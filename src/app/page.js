@@ -10,7 +10,7 @@ import Dot from "./components/dotComponent";
 export default function Home() {
   const [activeImage, setActiveImage] = useState("/navy.png");
   return (
-    <main className="grid-container">
+    <main className="grid-container m-10 max-h-screen">
       <Header />
       <section className="col-span-full grid grid-cols-subgrid">
         <h1 className="col-start-1 col-end-2 self-start leading-[1.2]">
@@ -52,25 +52,25 @@ export default function Home() {
       <Button />
 
       <section className="col-span-full grid grid-cols-subgrid self-end py-20">
-        <div className="arrows grid-column-1 flex items-end gap-4 text-xl">
-          <button className="button-arrow">←</button>
-          <span className="index text-white">1</span>
-          <button className="button-arrow">→</button>
+        <div className="arrows grid-column-1 flex items-end gap-4 text-xl text-white">
+          <button >←</button>
+          <span >1</span>
+          <button>→</button>
         </div>
 
         <ul className="watches col-start-2 col-end-3 m-0 flex list-none justify-center gap-4 p-0">
-          <li className="card" style={{ background: "rgba(67, 69, 88, 0.6)" }}>
+          <li className="aspect-video relative w-full rounded-2xl overflow-visible place-items-end" style={{ background: "rgba(67, 69, 88, 0.6)" }}>
             <Image
               width={300}
               height={300}
               onClick={() => setActiveImage("/navy.png")}
               src={"/navy.png"}
               alt="Watch"
-              className="img-watch-card"
+              className="absolute w-32 place-self-center h-auto block object-contain translate-y-6"
             />
           </li>
           <li
-            className="card"
+            className="aspect-video relative w-full rounded-2xl overflow-visible place-items-end"
             style={{ background: "rgba(106, 221, 204, 0.6)" }}
           >
             <Image
@@ -79,11 +79,11 @@ export default function Home() {
               onClick={() => setActiveImage("/mint.png")}
               src={"/mint.png"}
               alt="Watch"
-              className="img-watch-card"
+              className="absolute w-32 place-self-center h-auto block object-contain translate-y-6"
             />
           </li>
           <li
-            className="card"
+            className="aspect-video relative w-full rounded-2xl overflow-visible place-items-end"
             style={{ background: "rgba(249, 205, 196, 0.6)" }}
           >
             <Image
@@ -92,7 +92,7 @@ export default function Home() {
               onClick={() => setActiveImage("/pink.png")}
               src={"/pink.png"}
               alt="Watch"
-              className="img-watch-card"
+              className="absolute w-32 place-self-center h-auto block object-contain translate-y-6"
             />
           </li>
         </ul>
